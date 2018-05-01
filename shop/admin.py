@@ -1,10 +1,9 @@
-import decimal
 from django.contrib import admin
 from . import models
 # Register your models here.
 
 #admin.site.register(models.Product) # This will add Product to admin site
-admin.site.register(models.Category) # This will add Category to admin site
+#admin.site.register(models.Category) # This will add Category to admin site
 admin.site.site_header = "Coretabs Online Shop Administration"
 admin.site.site_title = "Coretabs Online Shop Administration"
 admin.site.index_title = ""
@@ -29,4 +28,9 @@ class ProductAdmin(admin.ModelAdmin):
     list_filter = ('created_at', 'category',)
     actions = [make_price_zero,make_reduction]
 
+@admin.register(models.Category)
+class CategoryAdmin(admin.ModelAdmin):
+    date_hierarchy = 'created_at'
+    search_fields = ['name']
+    list_display = ('name','description',)
 
