@@ -8,7 +8,7 @@
      <h2>{{ category.name }}</h2>
      <ul>
         {% for product in category.products.all %}
-           <h3><li><a href="{{ product.get_absolute_url }}">{{product.name}}</a></li></h3>
+           <h5><li><a href="{{ product.get_absolute_url }}">{{product.name}}</a></li></h5>
         {% endfor %}
      </ul>
 
