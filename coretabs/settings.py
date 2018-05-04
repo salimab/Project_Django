@@ -25,7 +25,7 @@ SECRET_KEY = '-m+w_5(*5-lbfvh$*(&bd%oti^-@7#for!+jrjxrjlku22ih(d'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["127.0.0.1","pacific-waters-56079.herokuapp.com"]
 
 
 # Application definition
