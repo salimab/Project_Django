@@ -5,13 +5,14 @@
 {% endblock %}
 
 {% block content %}
-<h1> Name : {{ product.name }}</h1>
-<p> Category : {{ product.category }}</p>
-<p> Created at: {{ product.created_at }} </p>
-<p> Price :{{ product.price }}</p>
-<p> Quantite :{{ product.stock }}</p>
-<p> Description :{{ product.description }}</p>
-
+<div id="header">
+<h1>{{ product.name }}</h1>
+<h3> Category : {{ product.category }}</h3>
+<h3> Created at: {{ product.created_at }} </h3>
+<h3> Price :{{ product.price }}</h3>
+<h3> Quantite :{{ product.stock }}</h3>
+<h3> Description :{{ product.description }}</h3>
+</div>
 
 
 {% endblock %}
